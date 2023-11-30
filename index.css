@@ -27,7 +27,7 @@ body {
   padding: 30px;
 }
 
-h1 {
+.header-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,21 +38,20 @@ h1 {
   color: hsl(183, 100%, 15%);
 }
 
-h2,
-h3,
-h4 {
+.bill-subheader,
+.tip-subheader,
+.people-subheader {
   color: hsl(186, 14%, 43%);
   font-size: 16px;
 }
 
-h5,
-h6 {
+.amount-subheader {
   color: hsl(189, 41%, 97%);
   font-size: 12px;
   margin: 0px;
 }
 
-h4 {
+.people-subheader {
   display: flex;
   justify-content: space-between;
   align-items: center;
