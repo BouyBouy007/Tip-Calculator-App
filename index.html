@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <h1>spli<div>tter</div></h1>
+  <main>
+    <div class="main-container">
+      <div class="left-container">
+          <h2>
+            Bill
+          </h2>
+          <div class="bill-container">
+            <input type="text" class="js-get-bill get-bill" id="bill" name="bill" placeholder="0">
+            <img class="dollar-icon" src="images/icon-dollar.svg" alt="Dollar Sign Icon">
+          </div>
+       
+          <h3>
+            Select Tip %
+          </h3>
+        
+          <div class="tip-container">
+              <button class="js-fixed-tip-button fixed-tip-button">5%</button>
+              <button class="js-fixed-tip-button fixed-tip-button">10%</button>
+              <button class="js-fixed-tip-button fixed-tip-button">15%</button>
+              <button class="js-fixed-tip-button fixed-tip-button">25%</button>
+              <button class="js-fixed-tip-button fixed-tip-button">50%</button>
+              <input type="text" class="js-custom-tip-input custom-tip-input" id="custom-tip"
+              name="custom-tip" placeholder="Custom" maxlength="3"></input>          
+          </div>
+        
+        <div>
+          <h4>
+            Number of People
+            <div class="js-error-message error-message"></div>
+          </h4>
+          <div class="people-container">
+            <input type="text" class="js-get-number-of-people get-number-of-people" 
+            id="number-of-people" name="number-of-people" placeholder="0">
+            <img class="person-icon" src="images/icon-person.svg" alt="Person Icon">
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="right-container">
+        <div class="cost-container-one">
+          <div>
+            <h5>Tip Amount</h5>
+            <div class="per-person">/ person</div>
+          </div>
+          <div class="tip-amount-per-person"></div>
+          <div class="js-calculated-tip calculated-cost">$0.00</div>
+        </div>
+      
+        <div class="cost-container-two">
+          <div>
+            <h6>Total</h6>
+            <div class="per-person">/ person</div>
+          </div>
+          <div class="total-per-person"></div>
+          <div class="js-calculated-total calculated-cost">$0.00</div>
+        </div>
+        <button class="js-reset-button reset-button">Reset</button>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Justin Seow Jing Nyap</a>.
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

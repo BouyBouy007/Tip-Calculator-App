@@ -1,0 +1,219 @@
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: hsl(185, 41%, 84%);
+}
+
+.main-container {
+  display: flex;
+  column-gap: 20px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 50px auto;
+  padding: 30px;
+  min-width: 640px;
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px hsla(183, 100%, 15%, 0.2);
+}
+
+.left-container {
+  flex: 50%;
+}
+
+.right-container {
+  position: relative;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 14px;
+  flex: 50%;
+  padding: 30px;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 50px auto;
+  letter-spacing: 3px;
+  color: hsl(183, 100%, 15%);
+}
+
+h2,
+h3,
+h4 {
+  color: hsl(186, 14%, 43%);
+  font-size: 16px;
+}
+
+h5,
+h6 {
+  color: hsl(189, 41%, 97%);
+  font-size: 12px;
+  margin: 0px;
+}
+
+h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-message {
+  font-size: 12px;
+  color: hsl(22, 88%, 58%);
+}
+
+.invalid-input {
+  outline: 2px solid hsl(22, 88%, 58%);
+}
+
+.per-person {
+  color : hsl(184, 14%, 56%);
+  font-size: 10px;
+  margin: 0px;
+}
+
+.bill-container,
+.people-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.bill-container {
+  margin-bottom: 24px;
+}
+
+.get-bill,
+.get-number-of-people,
+.custom-tip-input {
+  display: flex;
+  max-width: 100%;
+}
+
+input {
+  font-family: 'Space Mono', monospace;
+  text-align: right;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  flex: 1;
+  font-size: 24px;
+  padding: 2px 8px;
+}
+
+input::placeholder {
+  color: hsl(184, 14%, 56%);
+}
+
+input:active,
+input:focus {
+  outline-color: hsl(172, 67%, 45%);
+}
+
+.dollar-icon,
+.person-icon {
+  position: absolute;
+  left: 4%;
+}
+
+.tip-container {
+  display: grid;
+  grid-template-columns: repeat(3, 31%);
+  column-gap: 10px;
+  row-gap: 15px;
+  margin-bottom: 24px;
+}
+
+.fixed-tip-button,
+.custom-tip-input {
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.fixed-tip-button {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+  cursor: pointer;
+}
+
+.custom-tip-input::placeholder {
+  text-align: center;
+}
+
+.cost-container-one,
+.cost-container-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calculated-cost {
+  color: hsl(172, 67%, 45%);
+  font-size: 32px;
+}
+
+.reset-button {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 6px;
+  padding: 6px;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.reset-button:hover {
+  background-color: hsl(185, 41%, 84%);
+}
+
+.reset-button:active {
+  opacity: 0.7;
+}
+
+.pressed-tip-button {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 375px) {
+  .main-container {
+    flex-direction: column;
+    min-width: 180px;
+    max-width: 270px;
+  }
+
+  .people-container {
+    margin-bottom: 24px;
+  }
+
+  .right-container {
+    height: 500px;
+  }
+
+  .cost-container-two {
+    margin-bottom: 100px;
+  }
+}
+  
